@@ -1,0 +1,63 @@
+<!DOCKTYPE HTML>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title> Best Holiday Deals |Tripburg </title>
+	<link rel="icon" type="image/png" href=".\logo1.png">
+</head>
+
+
+<link rel="stylesheet" type="text/css" href="./navbar.css">
+<style>
+.topnav {
+  overflow: hidden;
+  background: url("dubai_m.jpg");
+  background-size: cover;
+}
+</style>
+</head>
+
+<body>
+<div class="nav">
+<div class="topnav" id="myTopnav">
+  <a href="./main_f.html"><img class="logo" src="./main_logo.png"></a>
+  <a href="./main_f.html" class="active"><b>Home</b></a>
+  <a href="./india.html"><b>India</b></a>
+   <div class="dropdown">
+    <button class="dropbtn"><b>Speciality Tours</b>
+    </button>
+    <div class="dropdown-content">
+      <a href="./luxury.html"><strong>Luxury Tours</strong></a>
+	  <a href="./adventure.html"><strong>Specially Abled</strong></a>
+      <a href="./honmon.html"><strong>Honeymoon Special</strong></a>
+      <a href="./senior.html"><strong>Seniors Special</strong></a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn"><b>Destinations</b>
+    </button>
+   <div class="dropdown-content">
+	  <a href="./europe.html"><strong>Europe</strong></a>
+      <a href="./asia.html"><strong>Asia Pacific</strong></a>
+      <a href="./australia.html"><strong>Australia</strong></a>
+	  <a href="./north.html"><strong>North America</strong></a>
+	  <a href="./south.html"><strong>South America</strong></a>
+    </div>
+  </div> 
+  <a href="./form.html"><b>Enquire</b></a>
+  <a href="./about.html"><b>About</b></a>
+  <a href="#" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<hr>
+</body>
+</html>

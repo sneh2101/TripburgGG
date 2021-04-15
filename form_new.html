@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title> Enquiry Form |Tripburg</title>
+	<link rel="icon" type="image/png" href=".\logo1.png">
+	<style>
+	body, html {
+    height: 100%;
+	}
+	.logo {
+		height: 102;
+		width: 122;
+		position: absolute;
+		padding: 12px;
+	}
+	ul {
+    list-style-type: none;
+	overflow: hidden;
+}
+
+li {
+	font-size: 16px;
+	font-family: Arial;
+	padding: 4px;
+	float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #F97B3C;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    background-image: url("back_m.png");
+	height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ 
+ input[type=text],input[type=tel],input[type=email] ,input[type=date],textarea {
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+    margin: 1px;
+    background-color: #f2f2f2;
+ }
+ .pad{
+padding-left:5em
+ }
+	p {
+	font-family: Arial;
+	font-size: 17px;
+	}
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+	margin: 20px;
+	float: left;
+}
+</style>
+</head>
+<div class="bg">
+<div class="bg">
+<a href="./main_f.html"><img class="logo" src="./main_logo.png"></a>
+<br><br><br><br>
+<ul>
+  <li><a href="#home"><b>About</b></a></li>
+  <li><a href="#news"><b>Enquire</b></a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn"><b>Destinations</b></a>
+    <div class="dropdown-content">
+	  <a href="./europe.html"><strong>Europe</strong></a>
+      <a href="./asia.html"><strong>Asia Pacific</strong></a>
+      <a href="./australia.html"><strong>Australia</strong></a>
+	  <a href="./NA.html"><strong>North America</strong></a>
+	  <a href="./SA.html"><strong>South America</strong></a>
+    </div>
+	  <li class="dropdown">
+    <a href="#" class="dropbtn"><b>Speciality Tours</b></a>
+    <div class="dropdown-content">
+      <a href="./Lux.html"><strong>Luxury Tours</strong></a>
+	  <a href="./coup.html"><strong>Specially Abled</strong></a>
+      <a href="./coup.html"><strong>Honeymoon Special</strong></a>
+      <a href="./senior.html"><strong>Seniors Special</strong></a>
+    </div>
+   </li>
+   <li><a href="./india.html"><strong>India</strong></a></li>
+</ul>
+<br>
+<h2 style="font-size: 30px; font-family: Arial; margin: 15px; padding: 2px;"> Write us an Enquiry </h2>
+<p style="font-size: 24px; font-family: Arial; margin: 15px; padding: 2px;"> Fill in these details and we will get back to <br> you with travel ideas within one working day. </p>
+<div class="form">
+<form>
+<br><input type="text" placeholder="First Name"> <br>
+<br><input type="text" placeholder="Last Name"> <br>
+<br><input type="tel" placeholder="Mobile Number"> <br> 
+<br><input type="email" placeholder="Email"> <br> 
+<br><input type="text" placeholder="Origin"> <br> 
+<br><input type="text" placeholder="Destination"> <br> 
+<p>Date of Travel</p> <input type="date" name="travel" min="2018-08-10" max="2018-11-27"><br><br>
+<textarea id="subject" name="subject" placeholder="Write something.." style="width: 300px; height: 50px;"></textarea><br>
+<p>Contact via</p> 
+  <input type="radio" name="contact" value="Call" checked> Call
+  <input type="radio" name="contact" value="Email"> Email<br><br>
+ <input type="reset"> <input type="submit"> 
+</form>
+</div>
+</div>
+</body>
+</html>
